@@ -1,0 +1,44 @@
+.v_gits, .gits, .benefits{
+  font-family: monospace;
+  font-size: 40px;
+  font-weight: bold;
+  background-color: #b3d9ff;
+  margin-left: 40px;
+  margin-right: 40px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  padding: 10px;
+    color: black;
+}
+
+p, .lists{
+  font-size: 20px;
+  font-family: serif;
+  font-weight: normal;
+    padding: 30px;
+}
+.install, .download, .setup, .init, .day_day, .branch{
+background-color: #e6f2ff;
+margin-left: 40px;
+margin-right: 40px;
+margin-top: 20px;
+margin-bottom: 10px;
+  color: black;
+}
+h2{
+  background-color:  #cce6ff;
+  padding: 30px;
+    color: black;
+}
+b{
+  background-color: #ffffff;
+  color: black;
+  padding: 20px;
+}
+.content{
+  padding: 30px;
+}
+body{
+  background-color: #001a33;
+  color: white;
+}
