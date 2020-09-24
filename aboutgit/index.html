@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="index.css">
+  </head>
+  <body>
+<div class="v_gits">
+  About Version Control Systems  </div>
+  <div class="content">
+    <p>
+      Version control systems are a category of software tools that helps record changes to files by keeping a track of modifications done to the code. Version control enables multiple people to simultaneously work on a single project. Each person edits his or her own copy of the files and chooses when to share those changes with the rest of the team.
+      Thus, temporary or partial edits by one person do not interfere with another person's work.
+      </p>
+    </div>
+
+  <div class="gits">
+    About Git and Github  </div>
+    <div class="content">
+      <p>
+        Git is a distributed version-control system for tracking changes in source code during software development. It is designed for coordinating work among programmers, but it can be used to track changes in any set of files. GitHub is a Git repository hosting service, but it adds many of its own features.
+        While Git is a command line tool, GitHub provides a Web-based graphical interface.
+        </p>
+      </div>
+
+
+  <div class="benefits">
+    Benefit of gits</div>
+    <div class="content">
+      <div class="lists">
+        <ul>
+          <li>
+            A complete long-term change history of every file.
+            </li>
+            <li>
+              Branching and merging. Having team members work concurrently is a no-brainer, but even individuals working on their own can benefit from the ability to work on independent streams of changes.
+              </li>
+              <li>
+                Provide Traceability. Being able to trace each change made to the software and connect it to project management and bug tracking software such as Jira, and being able to annotate each change with a message describing the purpose and intent of the change can help not only with root cause analysis and other forensics.
+                </li>
+          </ul>
+        </div>
+    </div>
+
+
+<div class="install">
+  <h2>INSTALLATION & GUIS</h2>
+  <div class="content">
+    <p>
+      With platform specific installers for Git, GitHub also provides the
+      ease of staying up-to-date with the latest releases of the command
+      line tool while providing a graphical user interface for day-to-day
+      interaction, review, and repository synchronization.<br />
+      </p>
+    </div>
+  </div>
+      <div class="download">
+        <h2>GitHub for Windows</h2><br />
+        <div class="content">
+          <b> <a href="https://windows.github.com">https://windows.github.com</a></b><br /><br /><br />
+          </div>
+
+        </div>
+        <div class="setup">
+          <h2>Setup</h2>
+          <div class="setting">
+            <div class="content">
+              <b>  $ git config --global user.name “Your Name”</b><br /><br /><br />
+ Set the name that will be attached to your commits and tags.<br /><br /><br/>
+ <b>  $ git config --global user.email “you@example.com”</b><br /><br /><br />
+ Set the e-mail address that will be attached to your commits and tags.<br /><br /><br />
+ <b>  $ git config --global color.ui auto</b><br /><br /><br />
+ Enable some colorization of Git output<br /><br />  <br />
+              </div>
+            </div></div>
+            <div class="init">
+              <h2>Starting a project</h2>
+              <div class="content">
+                <b>    $ git init [project name]</b><br /><br /><br />
+  Create a new local repository. If [project name] is provided, Git will
+  create a new directory name [project name] and will initialize a
+  repository inside it. If [project name] is not provided, then a new
+  repository is initialized in the current directory.<br /><br /><br />
+  <b>$ git clone [project url]</b><br /><br /><br />
+  Downloads a project with the entire history from the remote repository.<br /><br />
+                <br /></div>
+
+              </div>
+<div class="day_day">
+<h2> Day to Day command</h2>
+<div class="content">
+  <b>$ git status</b><br /><br /><br />
+  Displays the status of your working directory. Options include new,
+  staged, and modified files. It will retrieve branch name, current commit
+  identifier, and changes pending commit.<br /><br /><br /><b>
+  $ git add [file]</b><br /><br /><br />
+  Add a file to the staging area. Use in place of the full file path to add all
+  changed files from the current directory down into the directory tree.<br /><br /><br />
+  <b>$ git diff [file]</b><br /><br /><br />
+  Show changes between working directory and staging area.<br /><br /><br />
+  <b>$ git diff --staged [file]</b><br /><br /><br />
+
+  Shows any changes between the staging area and the repository.<br /><br /><br />
+  <b>$ git checkout -- [file]</b><br /><br /><br />
+  Discard changes in working directory. This operation is unrecoverable.<br /><br />
+  <br />
+  <b>$ git reset [file]</b><br /><br /><br />
+  Revert your repository to a previous known working state.<br /><br />
+  <br /><br /><b>$ git commit</b>
+  <br /><br /><br />
+  Create a new commit from changes added to the staging area.
+  The commit must have a message!<br /><br /><br />
+  <b>$ git rm [file]</b><br /><br /><br />
+  Remove file from working directory and staging area.<br /><br /><br />
+  <b>$ git stash</b><br /><br /><br />
+  Put current changes in your working directory into stash for later use.<br /><br /><br />
+  <b>$ git stash pop</b><br /><br /><br />
+  Apply stored stash content into working directory, and clear stash.<br /><br /><br />
+  <b>$ git stash drop</b>
+  <br /><br /><br />
+  Delete a specific stash from all your previous stashes.<br /><br /><br />
+  </div>
+
+  </div>
+
+     <div class="branch"><h2>Git Branching</h2>
+       <div class="content">
+         <b>    $ git branch [-a]</b><br /><br /><br />
+     List all local branches in repository. With -a: show all branches
+     (with remote).<br /><br /><br />
+     <b>$ git branch [branch_name]</b><br /><br /><br />
+     Create new branch, referencing the current HEAD.<br /><br />
+     <b>$ git checkout [-b][branch_name]</b><br /><br /><br />
+     Switch working directory to the specified branch. With -b: Git will
+     create the specified branch if it does not exist.<br /><br /><br />
+     <b>$ git merge [from name]</b><br /><br /><br />
+     Join specified [from name] branch into your current branch (the one
+     you are on currently).<br /><br /><br />
+     <b>$ git branch -d [name]</b><br /><br /><br />
+     Remove selected branch, if it is already merged into any other.
+     -D instead of -d forces deletion.<br /><br /><br />
+       </div>
+
+    </div>
+
+    <center>
+      &copy; 1906012
+      </center>
+  </body>
+</html>
