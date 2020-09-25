@@ -1,0 +1,34 @@
+.container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+img{
+  width: 300px;
+  height: 300px;
+  margin: 40px;
+  transition: all 1s;
+  box-shadow: 5px 5px 5px #660000;
+}
+img:hover{
+
+transform: scale(1.5);
+  animation: rotation 2s 1 linear;
+}
+h1{
+  border-bottom: 3px solid black;
+  width: 500px;
+  text-align: center;
+  border-right: 3px solid #b30059;
+}
+h1:hover{
+  transform: scale(2);
+}
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
