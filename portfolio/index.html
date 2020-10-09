@@ -13,102 +13,58 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
 <style>
  body{
+ width: 100%;
+ height: 100%;
+ position: relative;
+ top:0;
+ left: 0;
+ min-height: 100%;
+ min-width: 100%;
+ display: flex;
+flex-wrap: wrap;
   background: url(./bg1.jpg) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  width: 100%;
-  height: 100%;
-  position: fixed;
-  top:0;
-  left: 0;
-  min-height: 100%;
-  min-width: 1024px;
-}
-@@media screen and(max-width: 1024px) {
-  body{
-    left: 50%;
-    margin-left: -512px;
-  }
-}
-.bg1{
-  background: transparent;
+  padding: 2rem;
+  text-align: center;
+  border: 5px solid white;
 }
 
-.container{
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  animation-name: Images;
-  animation-duration: 2s;
-  animation-iteration-count: infinite;
-    animation-direction: alternate;
-    transform: translate(20px, -20px);
+.header,
+.footer {
+  flex: 2 100%;
 }
-img{
-  width: 400px;
-  height: 450px;
-  margin: 5px;
-  transition: all 1s;
-  box-shadow: 5px 5px 5px #ffccee;
+.sidebar {
+  flex: 1;
+  width: 70%;
+}
+.main {
+  flex: 1;
+  width: 30%;
+}
 
-
-}
-img:hover{
-  transform: rotate(20deg);
-  transform: scale(1.5);
-}
-img{
-
-  border-radius: 15px;
-  background: transparent;
-  padding: 20px;
-  width: 200px;
-  height: 150px;
-}
 
 
 </style>
 </head>
 <body>
-<div class="text-uppercase">
-  <div class="bs-example">
-      <nav class="navbar navbar-expand-md navbar-dark bg-dark">
-          <a href="#" class="navbar-brand">PRIYANSHU RAJ</a>
-          <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
-              <span class="navbar-toggler-icon"></span>
-          </button>
-
-          <div class="collapse navbar-collapse" id="navbarCollapse">
-              <div class="navbar-nav">
-                  <a href="#" class="nav-item nav-link active">Home</a>
-                  <a href="#" class="nav-item nav-link"></a>
-                  <a href="#" class="nav-item nav-link"></a>
-              </div>
-
-          </div>
-      </nav>
-    </div>
-  </div><br /><br /><br />
-<div class="container text-uppercase">
-  Hello !<br />Hey there, I am Priyanshu Raj. I am currently pursuing my bachelor's degree in Computer Science and Engineering from NIT Patna.
-
-My hobbies include skating, solving Rubik's cube and making technical DIY projects.
-
-I am fascinated with Computers and I am on my mission to learn and explore the realms of Computer
- Science and contribute my part to make the machines become self dependent and free from the need of human assistance.
-  <br />
+  <div class="header text-uppercase">
+      hello !
 </div>
-<br /><br /><br />
-<div class="container">
 
- <img src="./goals.jpg" />
+            <main class="main text-uppercase">
+              <br /><br />
+            Hey there, I am Priyanshu Raj.<br />
+                 I am currently pursuing my bachelor's degree in Computer Science and Engineering from NIT Patna.
 
- <img src="./ach.gif"/>
-<img src="./strength.jpg"/>
- </div>
 
+<br /><br />
+      <footer class="footer">Contact Me
+        <center>&copy; 1906012
+
+  </footer>
 
 </body>
 </html>
