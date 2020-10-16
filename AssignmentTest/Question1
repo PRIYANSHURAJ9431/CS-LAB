@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  <style>
+    .container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+img{
+  width: 300px;
+  height: 300px;
+  margin: 40px;
+  transition: all 1s;
+  box-shadow: 5px 5px 5px #660000;
+}
+img:hover{
+transform: scale(1.5);
+  animation: rotation 2s 1 linear;
+}
+h1{
+  border-bottom: 3px solid black;
+  width: 500px;
+  text-align: center;
+  border-right: 3px solid #b30059;
+  background-color: beige;
+}
+#roll:hover{
+  transform: scale(1.5);
+  background-color: gainsboro;
+  border-color: goldenrod;
+
+}
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+  </style>
+  </head>
+  <body>
+   
+    <center>
+      <h1 id="roll">1906012</h1>  
+    </center>
+    <center>
+      <h1>Assignment</h1>  
+    </center>
+<hr>
+<div class="container">
+      <img src="img1.jpg"/>
+      <img src="img2.jpeg" />
+      <img src="img3.jpg"/>
+      <img src="img4.jpg"/>
+      <img src="img5.jpg"/>
+      <img src="img6.jpg"/>
+        </div>
+  <hr>
+  <br>
+  <marquee>&copy; 1906012</marquee>
+  <br>
+  <hr>
+      </body>
+</html>
